@@ -1,0 +1,141 @@
+/* ================= BODY ================= */
+body{
+    background-image: url(recipepage.jpg);
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+}
+
+/* ================= CONTAINER ================= */
+.container{
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transform: scale(0.95);
+    transform-origin: top center;
+}
+
+/* ================= TITLE ================= */
+#pagename{
+    text-align: center;
+    font-size: 3rem;
+    color: purple;
+    text-shadow: 2px 4px 4px gray;
+}
+
+/* ================= GRID ================= */
+.recipe-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ================= CARD (HOME PAGE) ================= */
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ================= HIDE CHECKBOX ================= */
+.card-wrapper input{
+    display: none;
+}
+
+/* ================= FULL RECIPE (HIDDEN) ================= */
+.full-recipe{
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+/* SHOW ON CLICK */
+.card-wrapper input:checked ~ .full-recipe{
+    display: block;
+}
+
+/* ================= INFO BOX ================= */
+.recipe-info{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ================= INGREDIENTS ================= */
+.ingredients{
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* ================= TABLE ================= */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th{
+    background-color: #f5f5f5;
+}
+
+/* ================= TIPS ================= */
+.tips{
+    background-color: #fff8dc;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #ff9800;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    color: #666;
+}
+
+.full-recipe img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+}
+
+.nutrition,
+.tips{
+    margin-top: 20px;
+}
